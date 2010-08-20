@@ -1,12 +1,38 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DF337755-BE76-465A-A9EF-974D153538C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{129597AC-70CC-42FB-A06A-2F4D5F686291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuenasPracticasDAO", "BuenasPracticasDAO\BuenasPracticasDAO.csproj", "{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuenasPracticasBLL", "BuenasPracticasBLL\BuenasPracticasBLL.csproj", "{7B00684F-8BC4-469A-A4B9-DF985C753C47}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
 		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B00684F-8BC4-469A-A4B9-DF985C753C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B00684F-8BC4-469A-A4B9-DF985C753C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B00684F-8BC4-469A-A4B9-DF985C753C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B00684F-8BC4-469A-A4B9-DF985C753C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3FB5CFE-BAE8-4B0F-B54B-221BAC469556} = {DF337755-BE76-465A-A9EF-974D153538C6}
+		{7B00684F-8BC4-469A-A4B9-DF985C753C47} = {129597AC-70CC-42FB-A06A-2F4D5F686291}
 	EndGlobalSection
 EndGlobal

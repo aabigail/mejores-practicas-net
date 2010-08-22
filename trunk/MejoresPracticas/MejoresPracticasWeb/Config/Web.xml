@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object type="Persona/BuscarPersona.aspx" parent="basePage">
+    <property name="PersonaBll" ref="PersonaBll"/>
+  </object>
+
+</objects>

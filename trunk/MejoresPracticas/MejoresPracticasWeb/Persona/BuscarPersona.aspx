@@ -24,8 +24,23 @@
                 </td>
             </tr>
             <tr>
+                <td>
+                    <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+                </td>
+                <td align="right"">
+                     <asp:Button ID="btnBuscar" runat="server" Text="Buscar" 
+                         onclick="btnBuscar_Click" />
+                </td>
+            </tr>
+            <tr>
                  <td colspan="2">
-                    <asp:GridView ID="gvPersonas" runat="server">
+                    <asp:GridView ID="gvPersonas" runat="server" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:BoundField DataField="Codigo" HeaderText="Codigo" />
+                            <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />
+                            <asp:BoundField DataField="Nombres" HeaderText="Nombres" />
+                            <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" />
+                        </Columns>
                      </asp:GridView>
                 </td>
             </tr>

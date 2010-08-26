@@ -28,6 +28,10 @@ namespace MejoresPracticasBLL.Persona.Impl
 
         public List<BePersona> ObtenerPersonas(BeBuscarPersona beBuscarPersona)
         {
+            if (Log.IsDebugEnabled)
+            {
+                Log.Debug("ObtenerPersonas");
+            }
             return PersonaDal.ObtenerPersonas(beBuscarPersona);
         }
     }

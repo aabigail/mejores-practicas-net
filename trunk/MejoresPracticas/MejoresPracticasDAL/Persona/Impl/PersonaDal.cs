@@ -37,6 +37,11 @@ namespace MejoresPracticasDAL.Persona.Impl
 
         public List<BePersona> ObtenerPersonas(BeBuscarPersona beBuscarPersona)
         {
+            if (Log.IsDebugEnabled)
+            {
+                Log.Debug("ObtenerPersonas");
+            }
+            
             List<BePersona> lista;
             lista = new List<BePersona>();
             foreach (BePersona bePersona in _listMock)
@@ -47,6 +52,12 @@ namespace MejoresPracticasDAL.Persona.Impl
                     lista.Add(bePersona);
                 }
             }
+
+            if (Log.IsDebugEnabled)
+            {
+                Log.Debug("Registros " + lista.Count);
+            }
+
             return lista;
         }
     }

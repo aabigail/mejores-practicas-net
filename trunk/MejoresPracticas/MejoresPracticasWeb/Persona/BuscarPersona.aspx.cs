@@ -11,8 +11,14 @@ namespace MejoresPracticasWeb.Persona
     public partial class BuscarPersona : System.Web.UI.Page
     {
 
-        private readonly IPersonaBll personaBll;
         private static readonly ILog Log = LogManager.GetLogger(typeof(BuscarPersona));
+        private IPersonaBll personaBll;
+
+        public IPersonaBll PersonaBll
+        {
+            get { return personaBll; }
+            set { personaBll = value; }
+        }
 
         public BuscarPersona()
         {
@@ -20,7 +26,6 @@ namespace MejoresPracticasWeb.Persona
             {
                 Log.Debug("Constructor de BuscarPersona");
             }
-            personaBll = ContextRegistry.GetContext().GetObject("PersonaBll") as IPersonaBll;
         }
         
         protected void Page_Load(object sender, EventArgs e)

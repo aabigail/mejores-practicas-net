@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Config\Bll.xml" />
     <Content Include="Config\Dal.xml" />
+    <Content Include="Config\Web.xml" />
     <Content Include="lib\Common.Logging.dll" />
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\Spring.Core.dll" />

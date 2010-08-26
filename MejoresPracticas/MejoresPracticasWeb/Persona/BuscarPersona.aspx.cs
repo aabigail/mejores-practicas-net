@@ -11,13 +11,14 @@ namespace MejoresPracticasWeb.Persona
     public partial class BuscarPersona : System.Web.UI.Page
     {
 
+
         private static readonly ILog Log = LogManager.GetLogger(typeof(BuscarPersona));
-        private IPersonaBll personaBll;
+        private IPersonaBll _personaBll;
 
         public IPersonaBll PersonaBll
         {
-            get { return personaBll; }
-            set { personaBll = value; }
+            get { return _personaBll; }
+            set { _personaBll = value; }
         }
 
         public BuscarPersona()
@@ -42,16 +43,16 @@ namespace MejoresPracticasWeb.Persona
             }
             
             string nombresApellidos = txtNombresApellidos.Text;
-            string mensaje = string.Empty;
+            string mensaje;
             if (string.Empty.Equals(nombresApellidos))
             {
                 mensaje = "Ingresar nombres y apellidos.";
             }else{
-                if (personaBll != null)
+                if (PersonaBll != null)
                 {
                     BeBuscarPersona beBuscarPersona = new BeBuscarPersona();
                     beBuscarPersona.NombresApellidos = nombresApellidos;
-                    List<BePersona> lista = personaBll.ObtenerPersonas(beBuscarPersona);
+                    List<BePersona> lista = PersonaBll.ObtenerPersonas(beBuscarPersona);
                     if(lista.Count > 0)
                     {
                         gvPersonas.DataSource = lista;

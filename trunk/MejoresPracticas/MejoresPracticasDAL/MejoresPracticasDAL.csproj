@@ -56,11 +56,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{4F93987A-89C9-4F03-AA62-3FDB822ABC39}</Project>
-      <Name>Model %28main\Model\Model%29</Name>
+      <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
       <Project>{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}</Project>
-      <Name>Util %28main\Util\Util%29</Name>
+      <Name>Util</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,6 @@ namespace MejoresPracticasWeb.Persona
     public partial class BuscarPersona : System.Web.UI.Page
     {
 
-
         private static readonly ILog Log = LogManager.GetLogger(typeof(BuscarPersona));
         private IPersonaBll _personaBll;
 
@@ -22,9 +21,9 @@ namespace MejoresPracticasWeb.Persona
 
         public BuscarPersona()
         {
-            if(Log.IsDebugEnabled)
+            if (Log.IsInfoEnabled)
             {
-                Log.Debug("Constructor de BuscarPersona");
+                Log.Info("Constructor de BuscarPersona");
             }
         }
         

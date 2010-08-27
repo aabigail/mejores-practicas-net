@@ -14,9 +14,9 @@ namespace MejoresPracticasBLL.Persona.Impl
 
         public PersonaBll()
         {
-            if (Log.IsDebugEnabled)
+            if (Log.IsInfoEnabled)
             {
-                Log.Debug("Constructor PersonaBll");
+                Log.Info("Constructor PersonaBll");
             }
         }
 
@@ -30,7 +30,7 @@ namespace MejoresPracticasBLL.Persona.Impl
         {
             if (Log.IsDebugEnabled)
             {
-                Log.Debug("ObtenerPersonas");
+                Log.Debug("ObtenerPersonas ( beBuscarPersona : " + beBuscarPersona.ToString() + " )");
             }
             return PersonaDal.ObtenerPersonas(beBuscarPersona);
         }

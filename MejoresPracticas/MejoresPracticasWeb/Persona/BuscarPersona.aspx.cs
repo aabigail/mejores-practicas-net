@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using log4net;
 using MejoresPracticasBLL.Persona;
 using Model.Persona;
-using Spring.Context.Support;
 using Util.Entidad;
 
 namespace MejoresPracticasWeb.Persona

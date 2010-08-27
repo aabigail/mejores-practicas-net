@@ -13,10 +13,10 @@ namespace MejoresPracticasDAL.Persona.Impl
 
         public PersonaDal()
         {
-            
-            if(Log.IsDebugEnabled)
+
+            if (Log.IsInfoEnabled)
             {
-                Log.Debug("Constructor PersonaDal");
+                Log.Info("Constructor PersonaDal");
             }
 
             
@@ -39,7 +39,7 @@ namespace MejoresPracticasDAL.Persona.Impl
         {
             if (Log.IsDebugEnabled)
             {
-                Log.Debug("ObtenerPersonas");
+                Log.Debug("ObtenerPersonas ( beBuscarPersona : " + beBuscarPersona.ToString() + " )");
             }
             
             List<BePersona> lista;

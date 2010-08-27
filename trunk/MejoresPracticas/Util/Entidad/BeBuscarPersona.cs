@@ -1,7 +1,7 @@
 ﻿
 namespace Util.Entidad
 {
-    public class BeBuscarPersona
+    public class BeBuscarPersona : BeUtilBase
     {
 
         private string _nombresApellidos;

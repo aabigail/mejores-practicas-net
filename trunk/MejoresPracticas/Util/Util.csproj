@@ -35,6 +35,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\MejoresPracticasWeb\lib\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="PrintProperties, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MejoresPracticasWeb\lib\PrintProperties.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -51,8 +55,10 @@
   <ItemGroup>
     <Compile Include="Constante\ConstanteBll.cs" />
     <Compile Include="Constante\ConstanteWeb.cs" />
+    <Compile Include="Entidad\BeUtilBase.cs" />
     <Compile Include="Entidad\BeBuscarPersona.cs" />
     <Compile Include="Constante\ConstanteDal.cs" />
+    <Compile Include="Herramientas\Herramienta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +66,6 @@
       <Project>{4F93987A-89C9-4F03-AA62-3FDB822ABC39}</Project>
       <Name>Model %28Model\Model%29</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Herramienta\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

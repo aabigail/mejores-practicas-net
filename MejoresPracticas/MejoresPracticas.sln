@@ -12,15 +12,27 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81ABDE8C-7CE4-42F6-9D73-299265847E66}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		C:\Users\Yamil\Desktop\MejoresPracticas = C:\Users\Yamil\Desktop\MejoresPracticas
+		MejoresPracticas.vsmdi = MejoresPracticas.vsmdi
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{FFE46B0D-1599-4A54-8175-67CA0F6847B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{27D332E8-CFBB-4F87-9973-F4548B7F7343}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MejoresPracticasDALTest", "MejoresPracticasDALTest\MejoresPracticasDALTest.csproj", "{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MejoresPracticasBLLTest", "MejoresPracticasBLLTest\MejoresPracticasBLLTest.csproj", "{822FB501-1617-49B1-A351-EBF776BD5D04}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
 		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MejoresPracticas.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,15 +59,25 @@ Global
 		{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822FB501-1617-49B1-A351-EBF776BD5D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822FB501-1617-49B1-A351-EBF776BD5D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822FB501-1617-49B1-A351-EBF776BD5D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822FB501-1617-49B1-A351-EBF776BD5D04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A9F8B39B-0D1C-4CBE-BD14-D6B33863636F} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
 		{CD2DFF4D-DBB4-44BC-9B97-0BA0426DE93B} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
+		{A9F8B39B-0D1C-4CBE-BD14-D6B33863636F} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
 		{4F93987A-89C9-4F03-AA62-3FDB822ABC39} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
-		{2431D5D2-594A-49A0-9671-5FA1BCE8368F} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
 		{684A5CF1-49B3-48B4-824B-FD28D10BA7F5} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
+		{2431D5D2-594A-49A0-9671-5FA1BCE8368F} = {FFE46B0D-1599-4A54-8175-67CA0F6847B2}
+		{A53CD28E-C7E3-4D8F-AD11-0DAA6E8E29C7} = {27D332E8-CFBB-4F87-9973-F4548B7F7343}
+		{822FB501-1617-49B1-A351-EBF776BD5D04} = {27D332E8-CFBB-4F87-9973-F4548B7F7343}
 	EndGlobalSection
 EndGlobal

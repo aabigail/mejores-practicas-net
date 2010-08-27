@@ -64,7 +64,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{4F93987A-89C9-4F03-AA62-3FDB822ABC39}</Project>
-      <Name>Model %28Model\Model%29</Name>
+      <Name>Model %28main\Model\Model%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

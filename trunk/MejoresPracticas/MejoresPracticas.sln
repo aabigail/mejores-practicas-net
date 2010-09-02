@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 		C:\Users\Yamil\Desktop\MejoresPracticas = C:\Users\Yamil\Desktop\MejoresPracticas
 		MejoresPracticas.vsmdi = MejoresPracticas.vsmdi
+		Script.sql = Script.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{FFE46B0D-1599-4A54-8175-67CA0F6847B2}"

@@ -81,6 +81,7 @@
     <Content Include="lib\Spring.Core.dll" />
     <Content Include="lib\Spring.Data.dll" />
     <Content Include="lib\Spring.Testing.Microsoft.dll" />
+    <Content Include="lib\Spring.Testing.NUnit.dll" />
     <Content Include="lib\Spring.Web.dll" />
     <Content Include="Persona\BuscarPersona.aspx" />
     <Content Include="Web.config" />

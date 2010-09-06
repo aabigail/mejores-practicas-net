@@ -20,7 +20,7 @@ namespace MejoresPracticasDAL.Persona.MySql
 
         public AdoTemplate AdoTemplate
         {
-            get { return _adoTemplate; }
+            private get { return _adoTemplate; }
             set { _adoTemplate = value; }
         }
 
@@ -30,25 +30,13 @@ namespace MejoresPracticasDAL.Persona.MySql
         public List<BePersona> ObtenerPersonas(BeBuscarPersona beBuscarPersona)
         {
             
-            //CommandType.StoredProcedure
-            //List<BePersona> lista;
             IDbParameters dbParameters = AdoTemplate.CreateDbParameters();
             dbParameters.Add(PNombApe, MySqlDbType.VarChar, 100).Value = beBuscarPersona.NombresApellidos;
-            //Para Parametros de Salida
-            //dbParameters.AddOut("ShipperID", SqlDbType.Int);
-            //AdoTemplate.QueryWithRowMapper()
-            //List<BePersona> lista = AdoTemplate.QueryWithRowMapper(CommandType.StoredProcedure, ConstanteDal.SpObtenerPersonas,
-             //                                                      new PersonaRowMapper(),
-                //                                                   dbParameters) as List<BePersona>;
-            /*IList list = AdoTemplate.QueryWithRowMapper(CommandType.StoredProcedure, ConstanteDal.SpObtenerPersonas,
-                                                                   new PersonaRowMapper(),
-                                                                   dbParameters);*/
-
-            return Herramienta.ConvertToListOf<BePersona>(AdoTemplate.QueryWithRowMapper(CommandType.StoredProcedure, ConstanteDal.SpObtenerPersonas,
+            
+            return Herramienta.ConvertToListOf<BePersona>(
+                AdoTemplate.QueryWithRowMapper(CommandType.StoredProcedure, ConstanteDal.SpObtenerPersonas,
                                                                    new PersonaRowMapper(),
                                                                    dbParameters)) as List<BePersona>;
-            
-           
         }
     }
 }

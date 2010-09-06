@@ -77,6 +77,7 @@
     <Content Include="lib\Common.Logging.dll" />
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\MySql.Data.dll" />
+    <Content Include="lib\nunit.framework.dll" />
     <Content Include="lib\PrintProperties.dll" />
     <Content Include="lib\Spring.Core.dll" />
     <Content Include="lib\Spring.Data.dll" />
@@ -93,11 +94,11 @@
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{4F93987A-89C9-4F03-AA62-3FDB822ABC39}</Project>
-      <Name>Model</Name>
+      <Name>Model %28Model\Model%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
       <Project>{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}</Project>
-      <Name>Util</Name>
+      <Name>Util %28Util\Main\Util%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

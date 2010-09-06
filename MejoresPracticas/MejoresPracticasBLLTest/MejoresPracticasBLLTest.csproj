@@ -58,11 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Persona\PersonaBllTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AuthoringTests.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MejoresPracticasBLL\MejoresPracticasBLL.csproj">
@@ -75,15 +71,15 @@
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{4F93987A-89C9-4F03-AA62-3FDB822ABC39}</Project>
-      <Name>Model</Name>
+      <Name>Model %28Model\Model%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
       <Project>{684A5CF1-49B3-48B4-824B-FD28D10BA7F5}</Project>
-      <Name>Util</Name>
+      <Name>Util %28Util\Main\Util%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Folder Include="Persona\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

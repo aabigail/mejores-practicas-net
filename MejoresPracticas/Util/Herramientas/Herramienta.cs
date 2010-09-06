@@ -16,7 +16,6 @@ namespace Util.Herramientas
             {
                 result.Add(value);
             }
-                
 
             return result;
         }
